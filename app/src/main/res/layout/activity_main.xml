@@ -11,55 +11,61 @@
         android:id="@+id/subtraction"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="@color/pink"
         android:text="-"
         android:textSize="60sp"
+        android:onClick="findDifference"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/addition" />
 
     <Button
         android:id="@+id/multiplication"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/pink"
         android:text="*"
         android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:onClick="findProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addition" />
 
     <Button
         android:id="@+id/division"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/pink"
         android:text="/"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:onClick="findQuotient"
+        app:layout_constraintStart_toEndOf="@+id/multiplication"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction" />
 
     <Button
         android:id="@+id/addition"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="@color/pink"
+        android:onClick="findSum"
         android:text="+"
         android:textSize="48sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/input1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter a number!"
@@ -72,7 +78,7 @@
         android:id="@+id/input2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="136dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter a number!"
@@ -80,5 +86,15 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
