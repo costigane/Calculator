@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void switchScreens(View view) {
-        Intent intent = new Intent(this, TimeCalculator.class);
-        startActivity(intent);
-    }
-
 
     public void findSum(View view) {
         EditText number1ET = findViewById(R.id.input1);

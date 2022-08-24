@@ -5,63 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_green2"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
 
     <Button
         android:id="@+id/subtraction"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/mint"
         android:onClick="findDifference"
         android:text="–"
         android:textColor="@color/light_green1"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.012"
-        app:layout_constraintStart_toEndOf="@+id/addition" />
-
-    <Button
-        android:id="@+id/multiplication"
-        android:layout_width="105dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/mint"
-        android:onClick="findProduct"
-        android:text="×"
-        android:textColor="@color/light_green1"
-        android:textSize="55sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addition" />
-
-    <Button
-        android:id="@+id/division"
-        android:layout_width="105dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/mint"
-        android:onClick="findQuotient"
-        android:text="÷"
-        android:textColor="@color/light_green1"
-        android:textSize="55sp"
-        app:layout_constraintStart_toEndOf="@+id/multiplication"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction" />
+        app:layout_constraintBottom_toTopOf="@+id/division"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/addition"
         android:layout_width="105dp"
         android:layout_height="108dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/mint"
         android:onClick="findSum"
         android:text="+"
         android:textColor="@color/light_green1"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/multiplication"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="105dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/mint"
+        android:onClick="findQuotient"
+        android:text="÷"
+        android:textColor="@color/light_green1"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="105dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/mint"
+        android:onClick="findProduct"
+        android:text="×"
+        android:textColor="@color/light_green1"
+        android:textSize="55sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -69,24 +69,23 @@
         android:id="@+id/input1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Enter a number!"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swapToTime" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Enter a number!"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input1" />
 
@@ -102,17 +101,17 @@
         app:layout_constraintTop_toBottomOf="@+id/input2" />
 
     <Button
-        android:id="@+id/swapToTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/dark_blue"
-        android:onClick="switchScreens"
-        android:text="Switch to Time Calculator"
+        android:id="@+id/button"
+        android:layout_width="270dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="28dp"
+        android:text="Volume Calculator"
         android:textColor="@color/light_green1"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
