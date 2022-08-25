@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/costigan8427/Documents/GitHub/Calculator/app/src/main/res/layout/activity_main.xml" value="0.2147239263803681" />
+        <entry key="..\:/Users/costigan8427/Documents/GitHub/Calculator/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/costigan8427/Documents/GitHub/Calculator/app/src/main/res/layout/activity_page_switch.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/costigan8427/Documents/GitHub/Calculator/app/src/main/res/layout/activity_time_calculator.xml" value="0.25" />
       </map>
     </option>

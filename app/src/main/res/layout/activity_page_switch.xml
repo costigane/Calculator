@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PageSwitchActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageButton
+        android:id="@+id/rectPrismButton"
+        android:layout_width="145dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangular_prism"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cylinderButton"
+        android:layout_width="144dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/blue_cylinder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectPrismButton" />
+
+    <ImageButton
+        android:id="@+id/sphereButton"
+        android:layout_width="147dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/sphere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pyramidButton"
+        android:layout_width="146dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/blue_square_pyramid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sphereButton" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="356dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:text="Back to Numerical Calculator"
+        android:textColor="@color/light_green1"
+        android:textSize="17sp"
+        android:onClick="switchScreenNumerical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/directionsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Select Your Shape!"
+        android:textSize="30sp"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

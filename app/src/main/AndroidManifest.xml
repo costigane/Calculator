@@ -14,6 +14,21 @@
         android:theme="@style/Theme.CalculatorApp"
         tools:targetApi="31">
         <activity
+            android:name=".CylinderCalc"
+            android:exported="false" />
+        <activity
+            android:name=".PyramidVolume"
+            android:exported="false" />
+        <activity
+            android:name=".SphereVolume"
+            android:exported="false" />
+        <activity
+            android:name=".RectPrismVolume"
+            android:exported="false" />
+        <activity
+            android:name=".PageSwitchActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
